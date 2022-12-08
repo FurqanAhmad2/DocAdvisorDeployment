@@ -76,7 +76,7 @@ const SignUp = () => {
           data.append("phoneNumber", formData.phoneNumber);
           data.append("password", formData.password);
 
-          fetch("http://localhost:5000/api/user/signUp", {
+          fetch("https://doc-advisor-heroku.herokuapp.com/api/user/signUp", {
             method: "post",
             body: data,
           })

@@ -73,7 +73,7 @@ const PatientNavbar = ({socket}) => {
 
 
     const data = JSON.stringify({city, type})
-    fetch("http://localhost:5000/api/user/fetchdoctors", {
+    fetch("https://doc-advisor-heroku.herokuapp.com/api/user/fetchdoctors", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

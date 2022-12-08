@@ -36,7 +36,7 @@ const ForgetPassword3 = () => {
     console.log(data);
 
     if (password.password === crpassword.password) {
-      fetch("http://localhost:5000/api/user/signin/forget/v3", {
+      fetch("https://doc-advisor-heroku.herokuapp.com/api/user/signin/forget/v3", {
         method: "post",
 
         headers: {

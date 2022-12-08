@@ -49,7 +49,7 @@ const DelDoc = () => {
         email: formData.email,
       });
 
-      fetch("http://localhost:5000/api/user/RemoveDoc", {
+      fetch("https://doc-advisor-heroku.herokuapp.com/api/user/RemoveDoc", {
         method: "post",
 
         headers: {

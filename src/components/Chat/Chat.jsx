@@ -1,7 +1,7 @@
 import io from "socket.io-client";
 import { useEffect, useState } from "react";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://doc-advisor-heroku.herokuapp.com");
 
 function Chat() {
   //Room State

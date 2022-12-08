@@ -40,7 +40,7 @@ const Appointments = () => {
     const token = cookies.get("token");
     console.log(token);
 
-    fetch("http://localhost:5000/api/user/fetchappointments", {
+    fetch("https://doc-advisor-heroku.herokuapp.com/api/user/fetchappointments", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -74,7 +74,7 @@ const Appointments = () => {
         comment,
         Did: obj.email,
       });
-      fetch("http://localhost:5000/api/user/addcomment", {
+      fetch("https://doc-advisor-heroku.herokuapp.com/api/user/addcomment", {
         method: "post",
         headers: {
           "Content-Type": "application/json",
@@ -104,7 +104,7 @@ const Appointments = () => {
       id,
       rating: index,
     });
-    fetch("http://localhost:5000/api/user/updaterating", {
+    fetch("https://doc-advisor-heroku.herokuapp.com/api/user/updaterating", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -130,7 +130,7 @@ const Appointments = () => {
     const token = cookies.get("token");
     console.log(token);
     const data = JSON.stringify({ Did: obj.email });
-    fetch("http://localhost:5000/api/user/fetchcomment", {
+    fetch("https://doc-advisor-heroku.herokuapp.com/api/user/fetchcomment", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -156,7 +156,7 @@ const Appointments = () => {
       const token = cookies.get("token");
       console.log(token);
       const data = JSON.stringify({ Cid: obj.id });
-      fetch("http://localhost:5000/api/user/fetchreply", {
+      fetch("https://doc-advisor-heroku.herokuapp.com/api/user/fetchreply", {
         method: "post",
         headers: {
           "Content-Type": "application/json",

@@ -33,7 +33,7 @@ const VerificationDoc = () => {
     console.log(data);
 
 
-    fetch("http://localhost:5000/api/user/verifyAdmin", {
+    fetch("https://doc-advisor-heroku.herokuapp.com/api/user/verifyAdmin", {
       method: "post",
 
       headers: {

@@ -34,7 +34,7 @@ const ForgetPassword2 = () => {
     console.log(data);
 
 
-    fetch("http://localhost:5000/api/user/signin/forget/v2Pat", {
+    fetch("https://doc-advisor-heroku.herokuapp.com/api/user/signin/forget/v2Pat", {
       method: "post",
 
       headers: {

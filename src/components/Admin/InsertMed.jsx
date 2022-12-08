@@ -49,7 +49,7 @@ const InsertMed = () => {
         name: formData.name,
       });
 
-      fetch("http://localhost:5000/api/user/insertMed", {
+      fetch("https://doc-advisor-heroku.herokuapp.com/api/user/insertMed", {
         method: "post",
 
         headers: {

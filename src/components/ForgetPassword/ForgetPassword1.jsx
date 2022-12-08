@@ -35,7 +35,7 @@ const ForgetPassword1 = () => {
     console.log(data);
 
     
-    fetch("http://localhost:5000/api/user/signin/forget/v1", {
+    fetch("https://doc-advisor-heroku.herokuapp.com/api/user/signin/forget/v1", {
       method: "post",
 
       headers: {
